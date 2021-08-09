@@ -94,11 +94,13 @@ body {
 /* COINS SECTION */
 .coins {
 }
-.coins__search {
+.coins__search-result-container {
   display: flex;
   flex-direction: column;
 }
-.cs-form__title {
+/* COINS SEARCH AND RESULT PROPERTIES*/
+.cs__title,
+.cr__text {
   color: #fff;
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -109,27 +111,40 @@ body {
   margin-top: 5px;
   display: flex;
 }
-.cs-form__input {
+.cs__input,
+.cr__text-container {
   width: 100%;
   border: none;
   border-radius: 8px;
   padding: 11px 0 11px 16px;
   background-color: #232323;
 }
-.cs-form__input:focus {
+.cs__input:focus,
+.cr__input:focus {
   outline: none;
   border: 0.1px solid #fff;
 }
-.cs-form__btn {
+.cs__btn,
+.cr__btn {
   border: none;
   border-radius: 8px;
   margin-left: -20px;
   background-color: #ff7a00;
   padding: 6px 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
 }
-.cs-form__btn--icon {
+.cs__btn--icon {
   width: 20px;
   height: 20px;
 }
+/* COINS RESULT PROPERTIES */
+.cr__text-money {
+  color: #4cd71d;
+}
+.cr__btn {
+  min-width: 70px;
+}
+/* COINS TRACKED */
 .coins__tracked {
 }
