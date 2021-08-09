@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coin tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div class="header__logo-container">
+          <img
+            src="./img/logo.png"
+            alt="logo-coin-tracker"
+            class="header__logo"
+          />
+        </div>
+        <div class="header__welcome">
+          <h1 class="welcome__title">
+            Chequeá tus
+            <span class="welcome__title--freatured">inversiones</span> en un
+            solo lugar
+          </h1>
+          <img
+            src="./img/welcome-img.png"
+            alt="image-coins"
+            class="welcome__img"
+          />
+        </div>
+      </header>
+      <section class="coins">
+        <div class="coins__search">
+          <form class="coins__search-form">
+            <label>
+              <h3 class="cs-form__title">Buscá tus favoritas</h3>
+              <div class="container">
+                <input
+                type="text"
+                placeholder="Ej. Bitcoin"
+                class="cs-form__input"
+              />
+              <button type="submit" class="cs-form__btn">
+                <img
+                  src="./img/search.png"
+                  alt="search-icon"
+                  class="cs-form__btn--icon"
+                />
+              </button>                  
+            </div>
+          </form>
+        </div>
+        <div class="coins__tracked"></div>
+      </section>
+    </div>
+  </body>
+</html>

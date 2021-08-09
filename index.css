@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* fonts: arvo 700 serif - lato 400 - 700 -900 sans-serif */
+#root {
+  background-color: #000;
+  padding: 25px 24px 0 24px;
+}
+.header {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 769px) {
+  .header {
+    gap: 68px;
+  }
+}
+.header__logo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__logo {
+  max-width: 130px;
+  max-height: 20px;
+}
+@media (min-width: 769px) {
+  .header__logo {
+    max-width: 145px;
+    max-height: 27px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__logo {
+    max-width: 260px;
+    max-height: 35px;
+  }
+}
+.header__welcome {
+  /* border: 1px solid #fff; */
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 769px) {
+  .header__welcome {
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+  }
+}
+.welcome__title {
+  /* border: 1px solid #fff; */
+  margin: 0;
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  max-width: 300px;
+}
+@media (min-width: 769px) {
+  .welcome__title {
+    font-size: 48px;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome__title {
+    font-size: 66px;
+    max-width: 700px;
+  }
+}
+.welcome__title--freatured {
+  color: #ff7a00;
+}
+.welcome__img {
+  /* border: 1px solid #fff; */
+  max-width: 300px;
+  max-height: 280px;
+}
+@media (min-width: 769px) {
+  .welcome__img {
+    max-width: 262px;
+    max-height: 244px;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome__img {
+    max-width: 380px;
+    max-height: 320px;
+  }
+}
+/* crear un contenedor para el title y para la img de welcome */
+/* COINS SECTION */
+.coins {
+}
+.coins__search {
+  display: flex;
+  flex-direction: column;
+}
+.cs-form__title {
+  color: #fff;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.container {
+  margin-top: 5px;
+  display: flex;
+}
+.cs-form__input {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 0 11px 16px;
+  background-color: #232323;
+}
+.cs-form__input:focus {
+  outline: none;
+  border: 0.1px solid #fff;
+}
+.cs-form__btn {
+  border: none;
+  border-radius: 8px;
+  margin-left: -20px;
+  background-color: #ff7a00;
+  padding: 6px 10px;
+}
+.cs-form__btn--icon {
+  width: 20px;
+  height: 20px;
+}
+.coins__tracked {
+}
