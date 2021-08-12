@@ -1,0 +1,12 @@
+{
+  "name": "coin-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Franco72/coin-tracker.git",
+  "author": "Franco72 <francomoya1022@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "finnhub": "^1.2.5",
+    "parcel": "^2.0.0-rc.0"
+  }
+}

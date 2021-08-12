@@ -4,14 +4,17 @@
 body {
   margin: 0;
 }
-/* fonts: arvo 700 serif - lato 400 - 700 -900 sans-serif */
+.margin-0 {
+  margin: 0;
+}
+/* fonts: arvo 700 serif / lato 400 - 700 -900 sans-serif */
 #root {
   background-color: #000;
   padding: 25px 24px 0 24px;
 }
 .header {
   display: grid;
-  gap: 20px;
+  gap: 40px;
 }
 @media (min-width: 769px) {
   .header {
@@ -39,7 +42,6 @@ body {
   }
 }
 .header__welcome {
-  /* border: 1px solid #fff; */
   display: grid;
   justify-items: center;
 }
@@ -50,8 +52,6 @@ body {
   }
 }
 .welcome__title {
-  /* border: 1px solid #fff; */
-  margin: 0;
   font-family: "Arvo", serif;
   font-weight: 700;
   font-size: 36px;
@@ -74,7 +74,6 @@ body {
   color: #ff7a00;
 }
 .welcome__img {
-  /* border: 1px solid #fff; */
   max-width: 300px;
   max-height: 280px;
 }
@@ -93,6 +92,8 @@ body {
 /* crear un contenedor para el title y para la img de welcome */
 /* COINS SECTION */
 .coins {
+  display: grid;
+  gap: 50px;
 }
 .coins__search-result-container {
   display: flex;
@@ -102,7 +103,6 @@ body {
 .cs__title,
 .cr__text {
   color: #fff;
-  margin: 0;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -139,6 +139,9 @@ body {
   height: 20px;
 }
 /* COINS RESULT PROPERTIES */
+.cr__text {
+  font-size: 14px;
+}
 .cr__text-money {
   color: #4cd71d;
 }
@@ -148,3 +151,57 @@ body {
 /* COINS TRACKED */
 .coins__tracked {
 }
+.template {
+  width: 156px;
+  height: 224px;
+  background-color: #232323;
+  border-radius: 8px;
+}
+.template-content {
+  padding: 7px 8px;
+  display: grid;
+  gap: 20px;
+}
+/* DELETE */
+.template__delete {
+  display: flex;
+  justify-content: flex-end;
+}
+.template__delete > img {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+/* CURRENCY */
+.template__currency {
+  display: flex;
+  justify-content: space-between;
+}
+.template__currency-name {
+}
+.template__currency-name h3 {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.template__currency-name h5 {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.template__currency-icon {
+  width: 41px;
+  height: 41px;
+}
+/* CURRENCY TO USD */
+.template__currency-to-usd {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #4cd71d;
+}
+/* MINMAX */ ;

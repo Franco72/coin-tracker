@@ -25,7 +25,7 @@
           />
         </div>
         <div class="header__welcome">
-          <h1 class="welcome__title">
+          <h1 class="welcome__title margin-0">
             Chequeá tus
             <span class="welcome__title--freatured">inversiones</span> en un
             solo lugar
@@ -41,7 +41,7 @@
         <div class="coins-search-result-container">
           <form class="coins__search">
             <label>
-              <h5 class="cs__title">Buscá tus favoritas</h5>
+              <h5 class="cs__title margin-0">Buscá tus favoritas</h5>
               <div class="container">
                 <input
                 type="text"
@@ -61,7 +61,7 @@
             <div class="container">
               <div
               class="cr__text-container">
-              <h5 class="cr__text">BTC (1 Bitcoin) <span class="cr__text-money">USD $40.643,80</span></h5>
+              <h5 class="cr__text margin-0">BTC (1 Bitcoin) <span class="cr__text-money">USD $40.643,80</span></h5>
                 </div>
               <button type="submit" class="cr__btn">
                 Track +
@@ -69,7 +69,24 @@
             </div>
           </form>
         </div>
-        <div class="coins__tracked"></div>
+        <div class="coins__tracked">
+          <div class="template">
+            <div class="template-content">
+              <div class="template__delete">
+                <img src="./img/delete.png" alt="icon-delete" />
+              </div>
+              <div class="template__currency">
+                <div class="template__currency-name">
+                  <h3>BTC</h3> <h5>(1 Bitcoin)</h5>
+                </div>
+                <img  src="./img/coin-bitcoin-BORRAR.png"alt="currency-icon" class="template__currency-icon">
+                </img>
+              </div>
+              <h3 class="template__currency-to-usd margin-0">USD $40.643,80</h3>
+              <div class="template__minmax"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>
