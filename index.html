@@ -12,14 +12,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
-    <script defer src="./index.js"></script>
+    <script type="module" defer src="./index.js"></script>
   </head>
   <body>
     <div id="root">
       <header class="header">
         <div class="header__logo-container">
           <img
-            src="./img/logo.png"
+            src="../img/logo.png"
             alt="logo-coin-tracker"
             class="header__logo"
           />
@@ -31,7 +31,7 @@
             solo lugar
           </h1>
           <img
-            src="./img/welcome-img.png"
+            src="../img/welcome-img.png"
             alt="image-coins"
             class="welcome__img"
           />
@@ -47,10 +47,11 @@
                 type="text"
                 placeholder="Ej. Bitcoin"
                 class="cs__input"
+                name = "user-coin-searched"
               />
               <button type="submit" class="cs__btn">
                 <img
-                  src="./img/search.png"
+                  src="../img/search.png"
                   alt="search-icon"
                   class="cs__btn--icon"
                 />
@@ -61,7 +62,7 @@
             <div class="container">
               <div
               class="cr__text-container">
-              <h5 class="cr__text margin-0">BTC (1 Bitcoin) <span class="cr__text-money">USD $40.643,80</span></h5>
+              <h5 class="cr__text margin-0"><span class="cr__text-coin">BTC (1 Bitcoin)</span><span class="cr__text-money">USD $40.643,80</span></h5>
                 </div>
               <button type="submit" class="cr__btn">
                 Track +
@@ -71,19 +72,33 @@
         </div>
         <div class="coins__tracked">
           <div class="template">
+            <div class="fire-icon"></div>
             <div class="template-content">
               <div class="template__delete">
-                <img src="./img/delete.png" alt="icon-delete" />
+                <img src="../img/delete.png" alt="icon-delete" />
               </div>
               <div class="template__currency">
                 <div class="template__currency-name">
                   <h3>BTC</h3> <h5>(1 Bitcoin)</h5>
                 </div>
-                <img  src="./img/coin-bitcoin-BORRAR.png"alt="currency-icon" class="template__currency-icon">
+                <img  src="../img/coin-bitcoin-BORRAR.png"alt="currency-icon" class="template__currency-icon">
                 </img>
               </div>
               <h3 class="template__currency-to-usd margin-0">USD $40.643,80</h3>
-              <div class="template__minmax"></div>
+              <div class="template__minmax">
+                <form class="minmax__max">
+                    <input type="number" class="minmax__max-input" name="user-coin-tracked-max" placeholder="Ej. 50000">
+                    <button type="submit" class="minmax__max-btn">
+                      <img src="./img/max.png" alt="max-icon">
+                    </button>                  
+                </form>
+                <form class="minmax__min">
+                  <input type="number" class="minmax__min-input" name="user-coin-tracked-min" placeholder="Ej. 30000">  
+                  <button type="submit" class="minmax__min-btn">
+                    <img src="./img/min.png" alt="min-icon">
+                  </button>                  
+                </form>
+              </div>
             </div>
           </div>
         </div>

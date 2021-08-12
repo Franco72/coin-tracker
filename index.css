@@ -156,6 +156,7 @@ body {
   height: 224px;
   background-color: #232323;
   border-radius: 8px;
+  border: solid 3px red;
 }
 .template-content {
   padding: 7px 8px;
@@ -204,4 +205,42 @@ body {
   font-weight: 900;
   color: #4cd71d;
 }
-/* MINMAX */ ;
+/* MINMAX */
+.template__minmax {
+  display: grid;
+  gap: 8px;
+}
+.minmax__max,
+.minmax__min {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.minmax__max-input,
+.minmax__min-input {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8.5px 0 8.5px 16px;
+  background-color: #404040;
+}
+.minmax__max-btn,
+.minmax__min-btn {
+  border: none;
+  border-radius: 8px;
+  margin-left: -20px;
+  background-color: #404040;
+}
+.minmax__max-btn > img,
+.minmax__min-btn > img {
+  max-width: 12px;
+  max-height: 12px;
+}
+/* FIRE ICON */
+.fire-icon {
+  position: static;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff7a00;
+  border-radius: 50%;
+}
