@@ -186,11 +186,11 @@
           </style>
           <div class="template">
         <div class="fire-icon">
-          <img src="./img/fire-black.png" alt="fire-icon">
+          <img src="https://i.ibb.co/Y3P7mHt/fire-black.png" alt="fire-icon">
         </div>
         <div class="template-content">
           <div class="template__delete">
-            <img src="../img/delete.png" alt="icon-delete" />
+            <img src="https://i.ibb.co/b77tRP4/delete.png" alt="icon-delete" />
           </div>
           <div class="template__currency">
             <div class="template__currency-name">
@@ -204,13 +204,13 @@
             <form class="minmax__max">
                 <input type="number" class="minmax__max-input" name="user-coin-tracked-max" placeholder="Ej. 50000">
                 <button type="submit" class="minmax__max-btn">
-                  <img src="./img/max.png" alt="max-icon">
+                  <img src="https://i.ibb.co/QHKK94g/max.png" alt="max-icon">
                 </button>                  
             </form>
             <form class="minmax__min">
               <input type="number" class="minmax__min-input" name="user-coin-tracked-min" placeholder="Ej. 30000">  
               <button type="submit" class="minmax__min-btn">
-                <img src="./img/min.png" alt="min-icon">
+                <img src="https://i.ibb.co/hLHD5Jp/min.png" alt="min-icon">
               </button>                  
             </form>
           </div>

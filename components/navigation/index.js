@@ -100,7 +100,7 @@
         }
       </style>
       <nav class="menu">
-      <img src="./img/coin-tracker-logo.png" alt="" class="menu__logo" />
+      <img src="https://i.ibb.co/S70jxpN/coin-tracker-logo.png" alt="" class="menu__logo" />
       <ul class="menu__items">
         <li>
           <a href="./index.html" class="menu__item">Home</a>
@@ -109,7 +109,7 @@
           <a href="./news.html" class="menu__item">News</a>
         </li>
       </ul>
-      <img src="./img/menu-icon.png" alt="icon menu" class="menu-btn">
+      <img src="https://i.ibb.co/NLc7S6B/menu-icon.png" alt="icon menu" class="menu-btn">
     </nav>`;
       // Lógica para el navbar
       const $MENU_BTN = this.shadowRoot.querySelector(".menu-btn");

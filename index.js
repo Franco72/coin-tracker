@@ -38,7 +38,7 @@ function addQuotes(container) {
       const div = document.createElement("div");
       let imgUrl = findQuoteIcon(quote.symbol);
       if (imgUrl == undefined) {
-        imgUrl = "./img/template-coin.png";
+        imgUrl = "https://i.ibb.co/sqjnVjm/template-coin.png";
       }
       div.innerHTML = `<coin-tracked class="card" symbol="${
         quote.symbol
@@ -140,7 +140,7 @@ function setFavIconAndTitle(urlImage, title) {
 export async function checkQuotes() {
   const res = await getQuotesUpdated(state.getTrackedQuotes());
   // Se le debe pasar la url de la imagen a mostrar en el favicon y el título de la web
-  setFavIconAndTitle("./img/cloud.png", "Coin Tracker");
+  setFavIconAndTitle("https://i.ibb.co/RYdJ6fY/cloud.png", "Coin Tracker");
   const situation = state.updateAndCheckQuotes(res);
   if (situation) {
     setFavIconAndTitle("./img/fire.svg", situation);
