@@ -17,35 +17,30 @@
   <body>
     <div id="root">
       <header class="header">
-        <div class="header__logo-container">
-          <img
-            src="../img/logo.png"
-            alt="logo-coin-tracker"
-            class="header__logo"
-          />
-        </div>
-        <div class="header__welcome">
-          <h1 class="welcome__title margin-0">
-            Chequeá tus
-            <span class="welcome__title--freatured">inversiones</span> en un
-            solo lugar
-          </h1>
-          <img
-            src="../img/welcome-img.png"
-            alt="image-coins"
-            class="welcome__img"
-          />
-        </div>
-      </header>
-      <section class="coins">
-        <div class="coins-search-result-container">
+        <custom-nav></custom-nav>
+      <div class="header__welcome">
+        <h1 class="welcome__title margin-0">
+          Chequeá tus
+          <span class="welcome__title--freatured">inversiones</span> en un solo
+          lugar
+        </h1>
+        <img
+          src="../img/welcome-img.png"
+          alt="image-coins"
+          class="welcome__img"
+        />
+      </div>
+    </header>
+    <section class="coins">
+      <div class="coins__search-and-find-cont">
+        <div class="coins__search-cont">
           <form class="coins__search">
             <label>
               <h5 class="cs__title margin-0">Buscá tus favoritas</h5>
               <div class="container">
                 <input
                 type="text"
-                placeholder="Ej. Bitcoin"
+                placeholder="Ej. BTC-USD - ETH-USD - AAPL"
                 class="cs__input"
                 name = "user-coin-searched"
               />
@@ -58,51 +53,22 @@
               </button>                  
             </div>
           </form>
+        </div>
+        <div class="coins-result-cont">
           <form class="coins__result">
             <div class="container">
-              <div
-              class="cr__text-container">
-              <h5 class="cr__text margin-0"><span class="cr__text-coin">BTC (1 Bitcoin)</span><span class="cr__text-money">USD $40.643,80</span></h5>
-                </div>
+              <div class="cr__text-container">
+              <h5 class="cr__text margin-0"><span class="cr__text-coin"></span><span class="cr__text-money"></span></h5>
+              </div>
               <button type="submit" class="cr__btn">
                 Track +
               </button>                  
             </div>
           </form>
         </div>
-        <div class="coins__tracked">
-          <div class="template">
-            <div class="fire-icon"></div>
-            <div class="template-content">
-              <div class="template__delete">
-                <img src="../img/delete.png" alt="icon-delete" />
-              </div>
-              <div class="template__currency">
-                <div class="template__currency-name">
-                  <h3>BTC</h3> <h5>(1 Bitcoin)</h5>
-                </div>
-                <img  src="../img/coin-bitcoin-BORRAR.png"alt="currency-icon" class="template__currency-icon">
-                </img>
-              </div>
-              <h3 class="template__currency-to-usd margin-0">USD $40.643,80</h3>
-              <div class="template__minmax">
-                <form class="minmax__max">
-                    <input type="number" class="minmax__max-input" name="user-coin-tracked-max" placeholder="Ej. 50000">
-                    <button type="submit" class="minmax__max-btn">
-                      <img src="./img/max.png" alt="max-icon">
-                    </button>                  
-                </form>
-                <form class="minmax__min">
-                  <input type="number" class="minmax__min-input" name="user-coin-tracked-min" placeholder="Ej. 30000">  
-                  <button type="submit" class="minmax__min-btn">
-                    <img src="./img/min.png" alt="min-icon">
-                  </button>                  
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+      <div class="coins__tracked"></div>
+    </section>
     </div>
   </body>
 </html>

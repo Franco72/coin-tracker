@@ -3,49 +3,38 @@
 }
 body {
   margin: 0;
+  background-color: #000;
+}
+#root {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 769px) {
+  #root {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 .margin-0 {
   margin: 0;
 }
 /* fonts: arvo 700 serif / lato 400 - 700 -900 sans-serif */
-#root {
-  background-color: #000;
-  padding: 25px 24px 0 24px;
-}
 .header {
   display: grid;
   gap: 40px;
+  margin-top: 5px;
 }
 @media (min-width: 769px) {
   .header {
-    gap: 68px;
-  }
-}
-.header__logo-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.header__logo {
-  max-width: 130px;
-  max-height: 20px;
-}
-@media (min-width: 769px) {
-  .header__logo {
-    max-width: 145px;
-    max-height: 27px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__logo {
-    max-width: 260px;
-    max-height: 35px;
+    margin-top: 15px;
   }
 }
 .header__welcome {
   display: grid;
   justify-items: center;
 }
-@media (min-width: 769px) {
+@media (min-width: 749px) {
   .header__welcome {
     grid-template-columns: repeat(2, auto);
     align-items: center;
@@ -94,10 +83,23 @@ body {
 .coins {
   display: grid;
   gap: 50px;
+  margin-top: 25px;
+  /* max-width: 624px; */
+  /* margin: 0 auto; */
 }
-.coins__search-result-container {
-  display: flex;
-  flex-direction: column;
+.coins__search-and-find-cont {
+  display: grid;
+}
+@media (min-width: 769px) {
+  .coins__search-and-find-cont {
+    gap: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .coins__search-and-find-cont {
+    align-items: flex-end;
+    grid-template-columns: repeat(2, auto);
+  }
 }
 /* COINS SEARCH AND RESULT PROPERTIES*/
 .cs__title,
@@ -106,6 +108,12 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+@media (min-width: 769px) {
+  .cs__title,
+  .cr__text {
+    font-size: 24px;
+  }
 }
 .container {
   margin-top: 5px;
@@ -118,6 +126,18 @@ body {
   border-radius: 8px;
   padding: 11px 0 11px 16px;
   background-color: #232323;
+}
+@media (min-width: 769px) {
+  .cs__input,
+  .cr__text-container {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) {
+  .cs__input,
+  .cr__text-container {
+    font-size: 20px;
+  }
 }
 .cs__input:focus,
 .cr__input:focus {
@@ -133,114 +153,69 @@ body {
   padding: 6px 10px;
   font-family: "Lato", sans-serif;
   font-weight: 900;
+  white-space: nowrap;
+}
+@media (min-width: 769px) {
+  .cs__btn,
+  .cr__btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) {
+  .cs__btn,
+  .cr__btn {
+    font-size: 22px;
+  }
 }
 .cs__btn--icon {
   width: 20px;
   height: 20px;
 }
-/* COINS RESULT PROPERTIES */
-.cr__text {
-  font-size: 14px;
+@media (min-width: 769px) {
+  .cs__btn--icon {
+    width: 26px;
+    height: 26px;
+  }
 }
+@media (min-width: 1200px) {
+  .cs__btn--icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+/* COINS RESULT PROPERTIES */
 .cr__text-money {
+  font-size: 14px;
+  margin-left: 28px;
   color: #4cd71d;
 }
-.cr__btn {
-  min-width: 70px;
+@media (min-width: 769px) {
+  .cr__text-money {
+    font-size: 18px;
+  }
 }
+@media (min-width: 769px) {
+  .cr__text-money {
+    font-size: 20px;
+  }
+}
+
 /* COINS TRACKED */
 .coins__tracked {
-}
-.template {
-  width: 156px;
-  height: 224px;
-  background-color: #232323;
-  border-radius: 8px;
-  border: solid 3px red;
-}
-.template-content {
-  padding: 7px 8px;
   display: grid;
-  gap: 20px;
-}
-/* DELETE */
-.template__delete {
-  display: flex;
-  justify-content: flex-end;
-}
-.template__delete > img {
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
-}
-/* CURRENCY */
-.template__currency {
-  display: flex;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
+  gap: 46px 20px;
+  margin-bottom: 48px;
 }
-.template__currency-name {
+@media (min-width: 700px) {
+  .coins__tracked {
+    grid-template-columns: repeat(3, auto);
+    margin-top: 40px;
+  }
 }
-.template__currency-name h3 {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-}
-.template__currency-name h5 {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-}
-.template__currency-icon {
-  width: 41px;
-  height: 41px;
-}
-/* CURRENCY TO USD */
-.template__currency-to-usd {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  color: #4cd71d;
-}
-/* MINMAX */
-.template__minmax {
-  display: grid;
-  gap: 8px;
-}
-.minmax__max,
-.minmax__min {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.minmax__max-input,
-.minmax__min-input {
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  padding: 8.5px 0 8.5px 16px;
-  background-color: #404040;
-}
-.minmax__max-btn,
-.minmax__min-btn {
-  border: none;
-  border-radius: 8px;
-  margin-left: -20px;
-  background-color: #404040;
-}
-.minmax__max-btn > img,
-.minmax__min-btn > img {
-  max-width: 12px;
-  max-height: 12px;
-}
-/* FIRE ICON */
-.fire-icon {
-  position: static;
-  right: -50px;
-  width: 40px;
-  height: 40px;
-  background-color: #ff7a00;
-  border-radius: 50%;
+@media (min-width: 1200px) {
+  .coins__tracked {
+    grid-template-columns: repeat(4, auto);
+  }
 }
