@@ -1,5 +1,5 @@
-import { state } from "../../state.js";
-import { quoteStock } from "../../finnhub.js";
+import { state } from "./state.js";
+import { quoteStock } from "./finnhub.js";
 import "./components/coin-tracked/index.js";
 import "./components/navigation/index.js";
 
